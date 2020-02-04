@@ -20,7 +20,7 @@ namespace LoggerCrash.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogError("This will show in Application Insights but cause an exception: ");
+            _logger.LogError("This will show in Application Insights but throw an exception: ");
             return View();
         }
 
